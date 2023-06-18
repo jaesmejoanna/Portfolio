@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tinos', serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --bg-color: #222327;
+    --text-color: #cabebe;
+    --main-color: #957777;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 15px 1%;
+    transition: all .50s ease;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 2.5rem;
+    font-family: 'Comforter', cursive;
+}
+
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 40px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.main{
+    display: flex;
+    align-items: center;
+}
+.main .Download:hover{
+    text-decoration: underline;
+}
+.main a{
+    margin-right: 25px;
+    margin-left: 10px ;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.Download{
+    display: flex;
+    align-items: center;
+   
+}
+
+.main a:hover{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    color: var(--text-color);
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+@media (max-width: 1280px){
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a{
+        padding: 5px 0;
+        margin: 0px 20px ;
+    }
+}
+@media (max-width: 1090px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 40vh;
+        background: var(--main-color);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        color: var(--text-color);
+        transform: translateY(5px);
+    }
+    .navbar a.active{
+        color: var(--text-color);
+    }
+    .navbar.open{
+        right: 2%;
+    }
+    .myimg{
+        display: none;
+    }
+}
+
+/* ----------------------------HOME_START---------------------------- */
+div.home{
+    background-color: #391e3d;
+}
+
+/* EDIT YOUR FIRST IMAGE HEIGHT WIDTH HERE ACCORDINGLY (myimg) */
+.myimg{
+    width: 25vw;
+    height: 50vh;
+    border-radius: 20px;
+    display: inline-flex;
+    float: right;
+    transition: all .5s ease-in-out;
+}
+.myimg:hover{
+    width:29vw;
+    height: 60vh;
+    box-shadow: 0 0 30px #c59d9d ;
+}
+
+div.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 3vh;
+    color: #DDE6ED;
+    transition: all .5s ease-in-out;  
+}
+div.pimg {
+    display: flex;
+    justify-content:space-evenly;
+    padding-top: 35vh;
+    padding-bottom: 20vh;
+}
+a i{
+    height: 50px;
+    width: 50px; 
+    background-color: #643A6B; 
+    border-radius: 50%; 
+    text-align: center;
+    margin: 18px;
+    font-size: 30px;
+    transition: all .4s ease-in-out;
+    line-height: 50px;
+
+}
+.icons i{
+    line-height: 50px;
+}
+i:hover{
+    transform: scale(1.4);
+    border: #526D82;
+    box-shadow: 0px 0px 10px #957777;
+}
+.info h3, h4{
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #cabebe;
+}
+.info p{
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: #dbb1b1;
+    text-decoration: none;
+    text-align: center;
+    display: inline;
+    font-family: 'Comforter', cursive;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    
+}
+.info p:hover{
+    border-radius: 20px;
+    background-color: #dbb1b1;
+    color: #391e3d;
+    font-weight: 600;
+}
+/* ----------------------------HOME_END---------------------------- */
+
+/* ----------------------------ABOUT_START---------------------------- */
+
+.about{
+    height: 150vh;
+    background-color: #391e3d;
+}
+
+
+p1{
+    display: block;
+    font-size: 40px;
+    color: #dbb1b1;
+    background-color: #5F264A;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+/* EDIT YOUR FIRST IMAGE HEIGHT WIDTH HERE ACCORDINGLY (myimg2) */
+
+.myimg2{
+    margin: 50px 40px 0px 50px;
+    width: 30%;
+    height: 120vh;
+    border-radius: 20px;
+    display: inline-flex;
+    float: left;
+    transition: all .5s ease-in-out;
+    box-shadow: 0 0 15px #c59d9d;
+}
+
+.about h1{
+    margin-top: 50px;
+    color: #443939;
+    background-color: #c59d9d;
+    display: inline-block;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+p2, p3, p4, p5{
+    display: block;
+    color: #c59d9d;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 50px;
+    padding-left: 550px;
+    text-align: justify;
+}
+p2{
+    padding-top: 35px;
+}
+p5{
+    padding-left: 600px;
+    font-weight: 600;
+}
+
+/* ----------------------------ABOUT_END---------------------------- */
+
+/* ----------------------------PROJECTS_START---------------------------- */
+
+.projects{
+    height: 100vh;
+    background-color: #391e3d;
+}
+p6{
+    display: block;
+    color: #150b16;
+    font-size: 25px;
+    padding: 15px 15px 0px 10px;
+    text-align: justify;
+}
+p7{
+    display: block;
+    text-align: center;
+    font-size: 35px;
+    color: #362c2c;
+    text-decoration: underline;
+}
+.items{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    height: 50vh;
+    background-color:#957777;
+    margin: 150px 50px 0px 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #cabebe;
+}
+/* ----------------------------PROJECTS_END---------------------------- */
+
+
+/* ----------------------------CONTACT_START---------------------------- */
+.Contact-Me{
+    height: 120vh;
+    background-color: #391e3d;
+}
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    background-color: #957777;
+    padding: 20px 20px;
+    color: black;
+    border-radius: 10px;
+}
+textarea.contact-form-text{
+    resize: none;
+    height: 100px;
+}
+::placeholder{
+    color: #391e3d;
+    font-size: 15px;
+}
+p9{
+    display: block;
+    color: #c59d9d;
+    font-size: 30px;
+    text-align: center;
+}
+.contact-form-btn{
+    float: right;
+    margin-right: 220px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #957777;
+    color: #391e3d;
+    font-weight: 700;
+    font-size: 20px;
+    border: #391e3d solid;
+}
+
+.Contact-Me .socials{
+    text-align: center;
+}
+
+/* ----------------------------CONTACT_END---------------------------- */
+
+@media (max-width: 1090px){
+    .myimg{
+        display: none;
+    }
+    .myimg2{
+        display: none;
+    }
+    p2, p3, p4, p5{
+        padding-left: 10px;
+    }
+    .about{
+        height: 200vh;
+    }
+}
